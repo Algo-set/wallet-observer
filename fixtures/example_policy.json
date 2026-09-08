@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "maximum_snapshot_age_ms": 60000,
+  "minimum_balances": [
+    {
+      "wallet_id": "operating",
+      "asset_id": "stablecoin",
+      "minimum_quantity": "100.00"
+    },
+    {
+      "wallet_id": "reserve",
+      "asset_id": "stablecoin",
+      "minimum_quantity": "200.00"
+    }
+  ]
+}

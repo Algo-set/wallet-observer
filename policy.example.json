@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "maximum_snapshot_age_ms": 60000,
+  "minimum_balances": [
+    {
+      "wallet_id": "operating",
+      "asset_id": "native-gas",
+      "minimum_quantity": "0.02"
+    },
+    {
+      "wallet_id": "operating",
+      "asset_id": "stablecoin",
+      "minimum_quantity": "100.00"
+    }
+  ]
+}

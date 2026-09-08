@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "observed_at_ms": 1800000000000,
+  "balances": [
+    {
+      "wallet_id": "operating",
+      "chain_id": "evm-primary",
+      "asset_id": "stablecoin",
+      "symbol": "USD-STABLE",
+      "atomic_units": "60000000",
+      "quantity": "60.00",
+      "unit_price_usd": "1.00",
+      "value_usd": "60.00",
+      "source": "fixture"
+    },
+    {
+      "wallet_id": "reserve",
+      "chain_id": "evm-primary",
+      "asset_id": "stablecoin",
+      "symbol": "USD-STABLE",
+      "atomic_units": "300000000",
+      "quantity": "300.00",
+      "unit_price_usd": "1.00",
+      "value_usd": "300.00",
+      "source": "fixture"
+    }
+  ],
+  "wallet_nav": [
+    {
+      "wallet_id": "operating",
+      "valued_nav_usd": "60.00",
+      "unvalued_assets": []
+    },
+    {
+      "wallet_id": "reserve",
+      "valued_nav_usd": "300.00",
+      "unvalued_assets": []
+    }
+  ],
+  "total_valued_nav_usd": "360.00"
+}

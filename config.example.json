@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "chains": [
+    {
+      "id": "evm-primary",
+      "rpc_url_env": "WALLET_OBSERVER_RPC_URL",
+      "expected_chain_id": null
+    }
+  ],
+  "wallets": [
+    {
+      "id": "operating",
+      "chain_id": "evm-primary",
+      "address_env": "OPERATING_WALLET_ADDRESS"
+    },
+    {
+      "id": "reserve",
+      "chain_id": "evm-primary",
+      "address_env": "RESERVE_WALLET_ADDRESS"
+    }
+  ],
+  "assets": [
+    {
+      "id": "native-gas",
+      "chain_id": "evm-primary",
+      "symbol": "NATIVE",
+      "decimals": 18,
+      "kind": {
+        "type": "native"
+      },
+      "valuation_price_usd": null
+    },
+    {
+      "id": "stablecoin",
+      "chain_id": "evm-primary",
+      "symbol": "USD-STABLE",
+      "decimals": 6,
+      "kind": {
+        "type": "erc20",
+        "contract_address_env": "STABLECOIN_CONTRACT_ADDRESS"
+      },
+      "valuation_price_usd": "1.00"
+    }
+  ]
+}
