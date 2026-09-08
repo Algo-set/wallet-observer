@@ -12,3 +12,10 @@ versions are warnings because network stacks can temporarily require them.
 Automated checks use `cargo deny` for advisories, licenses, and sources. The
 license allowlist is intentionally explicit in `deny.toml`; additions require
 review rather than silently broadening policy.
+
+## Python package
+
+The Python implementation uses HTTPX for the read-only RPC transport. Runtime
+ranges are in `python/pyproject.toml`; the tested development/build environment
+is pinned in `python/requirements-dev.txt`. CI tests Python 3.11–3.14, the minimum
+supported HTTPX version and installed wheels. Dependabot checks `/python`.

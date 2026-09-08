@@ -1,6 +1,6 @@
 # Wallet observer
 
-A standalone, keyless Rust library and CLI for observing wallet balances,
+Standalone, keyless Rust and Python libraries and CLIs for observing wallet balances,
 calculating valued NAV, enforcing configurable balance floors, and producing
 non-executable movement recommendations.
 
@@ -50,7 +50,22 @@ Custom implementations are outside the shipped package's audited network
 boundary. They should remain read-only and must not introduce credentials or
 execution behavior into this process.
 
-## Build and test
+## Python version
+
+The independently installable [Python package](python/README.md) lives in `python/`.
+It supports the same configuration, snapshots, valued NAV and non-executable
+policy recommendations, with asynchronous custom providers and a read-only EVM
+adapter. Python 3.11 or newer is required; Rust is not needed to use Python.
+
+```bash
+python -m pip install ./python
+python -m wallet_observer analyze fixtures/example_snapshot.json fixtures/example_policy.json
+```
+
+The Python README documents exact arithmetic, stricter input validation and
+other differences. CI compares synthetic Rust/Python portfolio and policy output.
+
+## Rust build and test
 
 Rust 1.88 or newer is required.
 

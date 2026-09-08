@@ -30,3 +30,10 @@ values rather than real accounts, endpoints, or captured production payloads.
 
 By contributing, you agree that your contribution is licensed under the MIT
 License included in this repository.
+
+## Python
+
+See [the Python development instructions](python/README.md#test-and-build).
+Run pytest, Ruff, wheel/sdist builds and the Rust/Python portfolio parity check.
+Use synthetic fixtures and mock transports; keep account references and upstream
+response text out of persisted reports and errors.
